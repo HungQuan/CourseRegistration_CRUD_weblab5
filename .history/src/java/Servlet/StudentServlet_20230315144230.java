@@ -114,21 +114,16 @@ public class StudentServlet extends HttpServlet {
     throws SQLException, ServletException, IOException {
         studentID = Integer.parseInt(request.getParameter("id"));
         Student existingUser = studentDAO.selectStudent(studentID);
-        List<Student> listStudent = studentDAO.selectAllStudents();
         List<Course> listCourse = courseDAO.selectAllCourses();
         List<Course> listCourseAdded = courseDAO.selectAllCourses(studentID);
         request.setAttribute("listCourse", listCourse);
   
+        
         request.setAttribute("listCourseAdded", listCourseAdded);
-        request.setAttribute("student", existingUser);
-       
-        if(StudentBO.checkID(studentID, listStudent)){
-            RequestDispatcher dispatcher = request.getRequestDispatcher("Student/view.jsp"); 
-            dispatcher.forward(request, response);
 
-        }else{
-             response.sendRedirect("error.jsp");
-        }
+        request.setAttribute("student", existingUser);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("Student/view.jsp"); 
+        dispatcher.forward(request, response);
 
     }
     

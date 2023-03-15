@@ -8,6 +8,10 @@ package BLL;
  *
  * @author Quan Truong
  */
-public class CourseBO {
-    
+public class StudentBO {
+        private StudentDAO studentDAO; 
+
+    public StudentBO() {
+        studentDAO = new StudentDAO(); 
+    }
 }
