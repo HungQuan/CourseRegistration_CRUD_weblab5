@@ -7,7 +7,7 @@ To run this projec there are a few things you need to to check:
 
 2) Check if you connected Netbeans with your DBMS (in my case it is MySQL) 
 
-3) Create the database in the DBMS (use the sql.sql file to create)
+3) Create the database in the DBMS (use the .sql file to create)
 **This is important because the name of field and attribute need to be the same as the code. 
 
 4) Import the following library from Imported Library folder and add them in your local Project
