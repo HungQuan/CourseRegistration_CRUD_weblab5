@@ -1,7 +1,7 @@
 # CourseRegistration_CRUD_weblab5
 This is a small project for Course Registration I did for Web Development App
 
-To run this projec there are a few things you need to to check: 
+To run this project there are a few things you need to to check: 
 
 1) Check if you are running the project on Netbeans and you have installed Tomcat Apache. 
 
